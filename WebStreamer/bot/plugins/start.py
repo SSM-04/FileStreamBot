@@ -134,16 +134,17 @@ async def start(b, m):
 
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>
 
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>
+<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> {}?{}
 
 <b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>
+<b>Join Our TG Group @MoIndex</b>
 
 <i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@AvishkarPatil</b>
 
 """
 
         await m.reply_text(
-            text=msg_text.format(file_name, file_size, stream_link),
+            text=msg_text.format(file_name, file_size, stream_link, file_name),
             parse_mode="HTML",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📥", url=stream_link)]])
         )
