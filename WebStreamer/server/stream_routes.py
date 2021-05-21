@@ -18,7 +18,7 @@ async def root_route_handler(request):
     bot_details = await StreamBot.get_me()
     return web.json_response({"status": "running",
                               "server_permission": "Open",
-                              "telegram_bot": '@'+bot_details.username})
+                              "Visit": "https://www.irupc.net"})
 
 
 @routes.get("/{message_id}")
